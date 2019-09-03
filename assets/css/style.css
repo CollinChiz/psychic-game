@@ -1,0 +1,10 @@
+h1 {
+    text-align: center;
+}
+#game{
+    font-size: 25px;
+    font-weight: bold;
+}   
+body {
+    background-color: red;
+}
