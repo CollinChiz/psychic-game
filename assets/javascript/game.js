@@ -23,7 +23,7 @@
                 guessSoFar = [];
             }
             if(userGuess != computerGuess) {
-                guessSoFar.push(userGuess);
+                guessSoFar.push(userGuess); 
                 guessesLeft --;
             }
             if(guessesLeft === 0) {

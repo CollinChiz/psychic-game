@@ -15,7 +15,9 @@ document.onkeyup = function(event) {
            wins++;
             guessesLeft = 9;
             guesses = [];
-            $("#wins").append(wins);
+            var newVar = $("#wins").append("");
+            document.querySelector("#wins").innerHTML = html;
+           
         }
         if(userGuess != computerGuess) {
             guesses.push(userGuess);
@@ -27,7 +29,7 @@ document.onkeyup = function(event) {
             guesses = [];
 
         }
-        
+        // apply to dom
 
     }
 };
