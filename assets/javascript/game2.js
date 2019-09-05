@@ -15,29 +15,28 @@ document.onkeyup = function(event) {
             wins++;
             guessesLeft = 9;
             guesses = [];
-            // document.getElementById("wins").innerHTML = "Wins: " + wins;
-            // document.getElementById("guessLeft").innerHTML = "Guesses Left: " + guessesLeft;    
+            document.getElementById("wins").innerHTML = "Wins: " + wins;
+            document.getElementById("guessLeft").innerHTML = "Guesses Left: " + guessesLeft;    
             
             console.log(wins, losses, guessesLeft, guesses)
         }
         if(userGuess != computerGuess) {
             guesses.push(userGuess);
             guessesLeft --;
-            // document.getElementById("guessSoFar").innerHTML = "Guesses so far: " + guesses;
-            // document.getElementById("guessLeft").innerHTML = "Guesses Left: " + guessesLeft;
+            document.getElementById("guessSoFar").innerHTML = "Guesses so far: " + guesses;
+            document.getElementById("guessLeft").innerHTML = "Guesses Left: " + guessesLeft;
             console.log(guessesLeft);
         }
-        if(guessesLeft = 0) {
+        if(guessesLeft === 0) {
             losses ++;
             guessesLeft = 9;
             guesses = [];
-            // document.getElementById("losses", "guessLeft", "guessSoFar").innerHTML = "Losses: " + losses, "Guesses Left: " + guessesLeft, "Guesses so far: " + guessSoFar;
+            document.getElementById("losses").innerHTML = "Losses: " + losses;
+            document.getElementById("guessLeft").innerHTML = "Guesses Left: " + guessesLeft;
+            document.getElementById("guessSoFar").innerHTML = "Guesses so far: " + guesses;
         }
-        
+   
     }
-    document.getElementById("wins").innerHTML = "Wins: " + wins;
-        document.getElementById("losses").innerHTML = "Losses: " + losses;
-        document.getElementById("guessLeft").innerHTML = "Guesses Left: " + guessesLeft;
-        document.getElementById("guessSoFar").innerHTML = "Guesses so far: " + guesses;
+    
 
 };
