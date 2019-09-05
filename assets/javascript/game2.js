@@ -11,13 +11,12 @@ document.onkeyup = function(event) {
     var userOptions = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "m", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
     
     if(userOptions.indexOf(userGuess) > -1) {
-        if(userGuess === computerGuess) {
-           wins++;
+            if(userGuess === computerGuess) {
+            wins++;
             guessesLeft = 9;
             guesses = [];
-            var newVar = $("#wins").append("");
-            document.querySelector("#wins").innerHTML = html;
-           
+            document.getElementById("wins").innerHTML = "Wins: " + wins;
+            console.log(wins);
         }
         if(userGuess != computerGuess) {
             guesses.push(userGuess);
@@ -29,7 +28,7 @@ document.onkeyup = function(event) {
             guesses = [];
 
         }
-        // apply to dom
+        
 
     }
 };

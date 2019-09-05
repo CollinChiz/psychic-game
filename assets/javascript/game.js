@@ -20,7 +20,7 @@
             if(userGuess === computerGuess) {
                 wins++;
                 guessesLeft = 9;
-                guessSoFar = [];
+                guessSoFar = [];   
             }
             if(userGuess != computerGuess) {
                 guessSoFar.push(userGuess); 
